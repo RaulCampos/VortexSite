@@ -1,0 +1,510 @@
+@charset "utf-8";
+/* Externos */
+
+@import "reset.css";
+@import "grid.css";
+@import "tipografia.css";
+@import "form.css";
+
+/* CSS Document */
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Principal - Body @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+#conteudo2{width:400px; height:auto; margin:auto; padding-top:50px;}
+#conteudo2 .titulo{width:auto; height:auto; float:left; margin:0 0 15px 0; font:12px Verdana, Arial, Helvetica, sans-serif; color:#333; font-weight:bold;}
+#conteudo2 .div{width:400px; height:auto; float:left; background:#E8E8FF;}
+#conteudo2 .div .busca{width:338px; height:auto; float:left; padding:8px 12px; margin:2px 0 2px 2px; border:1px solid #CCC; border-right:hidden; outline:none; font:12px Verdana, Arial, Helvetica, sans-serif; color:#333;}
+#conteudo2 .div .btn{width:32px; height:32px; float:left; margin:2px 0 0 0; background:#FFF; background-image:url(../img/lupa.png); background-repeat:no-repeat; background-position:7px 7px; border:1px solid #CCC; border-left:hidden; cursor:pointer;}
+
+
+*{ padding:0; margin:0;}
+body{font-family: "Lucida Grande",Arial,sans-serif; background:url(../public/images/background2.jpg) repeat-x top;
+	background-repeat:no-repeat;background-attachment:fixed;background-color:#f2f2f2;background-image:-moz-linear-gradient(#e2e2e2,#f2f2f2);background-image:-webkit-gradient(linear,0% 0,0% 100%,from(#e2e2e2),to(#f2f2f2));background-image:-webkit-linear-gradient(#e2e2e2,#f2f2f2);background-image:-o-linear-gradient(#e2e2e2,#f2f2f2)}
+#back1 { height:40px; border-top:3px solid #CCC; border-radius:2em; position:relative;}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Rodapé @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#rodape{ margin-top: 40px; width:100%; height:100px; bottom:0; position: relative;}
+#rodape #rodape-vortex span { color: #999; line-height: 70px; }
+#rodape #rodape-vortex { width: 200px; float: left;}
+#rodape .first{list-style: none;
+ width: 43%;
+border-left: 1px solid rgba(0,0,0,0.2);
+float: left;
+line-height: 25px;
+}
+#rodape .last{list-style: none;
+ width: 23%;
+border-left: 1px solid rgba(0,0,0,0.2);
+float: left;
+line-height: 25px }
+
+#rodape .last .titulo{
+	color:#999;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Conteudo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+#conteudo{width:100%; margin:0 auto; padding:30px 0px;}
+#conteudo #left { width:100%; }
+#conteudo #left-filmes { border-radius: 1em; width:20%;  float: left; margin-bottom: 50px; }
+#conteudo #left-filmes #top-left{ border-radius: 1em; margin-bottom: 20px; background: #ccc; padding: 50px; }
+#conteudo #left-filmes #bot-left{ text-align: center; border-radius: 1em; margin-bottom: 20px; background: #ccc; padding: 10px 0; }
+#conteudo #left-filmes #bot-left ul{list-style: none;}
+#conteudo #right-filmes { border-radius: 2em; width:79%; height: 664px; background: #ccc; float: right; margin-bottom: 50px;  }
+ 
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Filmes  d1v @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+#conteudo #filmes{
+	border-radius:1em;
+	overflow:hidden;
+	width:100%;
+	height: 314px;
+}
+#conteudo #filmes  #topo{
+	padding: 0 15px;
+	height: 47px;
+	background: #000;
+	line-height: 46px;
+	text-shadow: 0 1px 0 #000;
+	overflow: hidden;
+}
+#topo .titulo{
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	float: left;
+	height: 46px;
+	max-width: 580px;
+	overflow: hidden;
+}
+#conteudo #filmes #topo #links {
+	float: left;
+margin: 0 20px;
+height: 46px;
+overflow: hidden;
+}
+
+#links ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#links li{
+	display: inline-block;
+
+}
+#links li a{
+float: left;
+height: 22px;
+
+	border-radius: 0.5em;
+line-height: 22px;
+margin: 12px 0 0;
+font-weight: bold;
+font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+color: #333;
+padding: 0 16px;
+text-decoration: none;
+text-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+#links a:hover { text-shadow:none;
+color:#fff;
+font-weight: bold;
+}
+
+#conteudo #filmes #ultimos-filmes {
+	border-radius:0 0 1em 1em;
+	position:relative;
+	background: #1b1f23;
+	width:100%;
+	overflow:auto;
+	float:left;
+	height: 250px;
+}
+#conteudo #filmes #ultimos-filmes #conteiner{
+	border-radius: 1em;
+	margin:25px 50px;
+	
+}
+
+#conteudo #filmes #ultimos-filmes ul li img{
+	border-radius:0.5em;
+	height: 192px;
+	width: 122px;
+}
+#conteudo #filmes #ultimos-filmes #canvas:hover .canvas span{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+}
+#conteudo #filmes #ultimos-filmes #canvas:hover .icone{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+	transform: rotate(720deg);
+	-webkit-transform:rotate(720deg);
+	-moz-transform:rotate(720deg);
+	-o-transform:rotate(720deg);
+	-ms-transform: rotate(720deg); }
+
+}
+
+#conteudo #filmes #ultimos-filmes ul li {
+	float: left;
+	display: block;
+	width: 122px;
+	margin-right: 10px;
+	height: 192px;
+	
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Filmes-Varios @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+#conteudo #filmes-varios{
+	border-radius:1em 1em 0 0;
+	height:700px;
+	width:100%;
+}
+#conteudo #filmes-varios  #topo-varios{
+	border-radius:1em 1em 0 0;
+	background:#ccc;
+	width:100%;
+	height:35px;
+}
+#conteudo #filmes-varios #topo-varios h3{
+	text-align:center;
+	padding: 7px;
+	font:Georgia, Arial; 
+}
+
+#conteudo #filmes-varios #ultimos-filmes-varios {
+	border-radius:0 0 1em 1em;
+	height:700px;
+	position:relative;
+	display:block;
+	background: #1b1f23;
+	width:100%;
+	overflow:hidden;
+	float:left;
+	display:inline;
+}
+#conteudo #filmes-varios #ultimos-filmes-varios #margin{
+	margin:auto;
+	padding:30px;
+	padding-bottom:0;
+	height:630px;
+	width:100%;
+}
+
+#conteudo #filmes-varios #ultimos-filmes-varios ul li img{
+	border-radius:0.5em;
+	height: 150px;
+	width: 100px;
+}
+#conteudo #filmes-varios #ultimos-filmes-varios ul li img:hover{
+	border:1px solid #333;
+}
+
+#conteudo #filmes-varios #ultimos-filmes-varios ul li {
+	list-style: none;
+	display: inline;
+	float: left;
+	padding:10px;
+	height:170px;
+	width:120px;
+	overflow: hidden;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ PAGINAÇÕES @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#conteudo #filmes-varios #ultimos-filmes-varios .paginacao {text-align:center;}
+#conteudo #filmes-varios #ultimos-filmes-varios .paginacao .page {display:inline; border:1px solid #666; color:#fff; background: #ccc;  padding:5px 8px; margin-right:4px; font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; border-radius:0.5em; text-decoration:overline;}
+#conteudo #filmes-varios #ultimos-filmes-varios .paginacao a {  border-radius: 0.5em; border:1px solid #666; padding:5px 8px; color:#fff; margin-right:2px; text-decoration:none;}
+#conteudo #filmes-varios #ultimos-filmes-varios .paginacao a:hover{ -moz-box-shadow: inset 0 0 8px #FFF ;-webkit-box-shadow: inset 0 0 8px #FFF; box-shadow: inset 0 0 5px #FFF; cursor:pointer; text-decoration:underline;}
+
+
+	
+.paginacao {text-align:center;}
+.paginacao .page {display:inline; border:1px solid #666; color:#fff; background: #000;  padding:5px 8px; margin-right:4px; font:14px "Trebuchet MS", Arial, Helvetica, sans-serif; font-weight:bold; border-radius:0.5em; text-decoration:overline;}
+.paginacao a {  border-radius: 0.5em; border:1px solid #666;background: #999; padding:5px 8px; color:#fff; margin-right:2px; text-decoration:none;}
+.paginacao a:hover{ -moz-box-shadow: inset 0 0 8px #FFF ;-webkit-box-shadow: inset 0 0 8px #FFF; box-shadow: inset 0 0 5px #FFF; cursor:pointer; text-decoration:underline;}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Singles @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+#conteudo #left #post2{ width:100%; left:50%; text-align:center;  margin-bottom:40px; }
+#conteudo #left #post2 h1{ font:22px Arial, Helvetica, sans-serif; color:#333; font-weight:bold;}
+#conteudo #left #post2 h1 a{ font:22px Arial, Helvetica, sans-serif; color:#333; text-decoration:none; font-weight:bold;}
+#conteudo #left #post2 h1 a:hover{ text-decoration:underline;}
+#conteudo #left #post2 h5 { font:14px Arial, Helvetica, sans-serif; color:#999; padding-left:2px; padding-bottom: 10px;	}
+#conteudo #left #post2  #frame #frame{float:left; margin:0 auto;} 
+#conteudo #left #post2 p { border-bottom:1px dashed #09c; padding-bottom:20px; font:15px Arial, Helvetica, sans-serif; font-weight:normal; color:#333; text-align:justify;}
+#conteudo #left #post2 p a { font:15px Arial, Helvetica, sans-serif; font-weight:normal; color:#09c; text-decoration:none;}
+#conteudo #left #post2 p a:hover{ text-decoration:underline;}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ BUSCA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#conteudo #post{ width:100%; left:50%; text-align:center;  margin-bottom:40px; }
+#conteudo h1{text-align: center;}
+#conteudo #post img { width: 140px; height: 190px; border-radius: 1em; margin-bottom: 10px;}
+#conteudo #post h2{ font:22px Arial, Helvetica, sans-serif; color:#333; font-weight:bold;}
+#conteudo #post h2 a{ font:22px Arial, Helvetica, sans-serif; text-decoration:none; font-weight:bold;}
+#conteudo #post h1 a:hover{ text-decoration:underline;}
+#conteudo #post h5 { font:14px Arial, Helvetica, sans-serif; color:#999; padding-left:2px; padding-bottom: 10px;	}
+#conteudo #post  #frame #frame{float:left; margin:0 auto;} 
+#conteudo #post p { border-bottom:1px dashed #09c; padding-bottom:20px; font:15px Arial, Helvetica, sans-serif; font-weight:normal; color:#333; text-align:justify;}
+#conteudo #post p a { font:15px Arial, Helvetica, sans-serif; font-weight:normal; color:#09c; text-decoration:none;}
+#conteudo #post p a:hover{ text-decoration:underline;}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Contato @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+#contato {text-align: center;}
+#page #contato {float:left; width:560px;}
+#page #contato h2 {font:20px Arial, Helvetica, sans-serif; color:#333; font-weight:bold; padding-bottom:10px;}
+#page #contato p {font:15px Arial, Helvetica, sans-serif; color:#666; padding-left:2px; margin-bottom:40px;}
+#page #contato p a {font:15px Arial, Helvetica, sans-serif; color:#00F;; padding-left:2px; text-decoration:none; margin-bottom:40px;}
+#page #contato span{ font:14px Arial, Helvetica, sans-serif; color:#666;}
+#page #contato p a:hover {font:15px Arial, Helvetica, sans-serif; color:#666; padding-left:2px; text-decoration:underline;}
+#page #contato input { font:"Comic Sans MS", cursive; color:#666; width:250px; border:1px solid #03c; height:25px; padding:6px; border-radius:2em;}
+textarea:focus { 
+	 -webkit-box-shadow: 0px 0px 3px #007eff;  
+    -moz-box-shadow: 0px 0px 3px #007eff;  
+    box-shadow: 0px 0px 3px #007eff;  
+}  
+input:focus {  
+    -webkit-box-shadow: 0px 0px 0px #007eff;  
+    -moz-box-shadow: 0px 0px 0px #007eff;  
+    box-shadow: 0px 0px 0px #007eff;
+    outline: none;  
+}  
+#page #contato textarea { border:1px solid #03c; padding:6px; border-radius:0.5em;}
+#page #contato .btn2 { padding:3px; font:15px Arial, Helvetica, sans-serif; width:180px; background:#09c; color:#fff; border-radius:1em;}
+#page #contato .btn2:hover{ -moz-box-shadow: inset 0 0 8px #FFF;-webkit-box-shadow: inset 0 0 8px#FFF; box-shadow: inset 0 0 5px #FFF; cursor:pointer;}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Sistema de Comentários @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#form { width:100%; text-align: center; padding-top:20px; }
+#form span {font:15px Arial, Helvetica, sans-serif; color:#333; }
+#form input{ padding:3px 8px; border:1px solid #ccc; width:280px; height:25px; border-radius:0.5em;}
+#form textarea{padding:3px 8px; border:1px solid #ccc; border-radius:0.5em;}
+#form .btn2 {padding:3px; font:15px Arial, Helvetica, sans-serif; width:180px; color:#ccc; border-radius:0.5em;}
+#form .btn2:hover{ -moz-box-shadow: inset 0 0 8px #FFF;-webkit-box-shadow: inset 0 0 8px#FFF; box-shadow: inset 0 0 5px #FFF; cursor:pointer;}
+p {font:15px Arial, Helvetica, sans-serif; color: red; padding-bottom:5px; padding-top:20px;}
+
+#conteudo #mostracoments2 {text-align: center;}
+#conteudo #mostracoments2 span.span { text-align:center; font:15px Arial, Helvetica, sans-serif; color: red; padding-bottom:5px; padding-top:20px;}
+
+#conteudo #comentariosStil {width:100px;}
+#conteudo #comentariosStil h2{font:Arial, Helvetica, sans-serif; color:#363;;}
+
+#conteudo #comentariosStil{ margin-bottom: 20px; text-align: center; width:100%; padding-top:20px; border-bottom:2px dotted #d2d2d2; padding-bottom:20px;}
+
+#mostra_coments { text-align: left; width:100%;}
+#mostra_coments h3{font:10px Arial, Helvetica, sans-serif; color:#09c;}
+#mostra_coments p {font:15px Arial, Helvetica, sans-serif; color:#666;}
+#mostra_coments img.normalimg{ float:left; width:70px; height:70px; border:2px solid #444; margin-right:14px; border-radius:0.5em;}
+#mostra_coments img.aligncenter{display:block; margin-left: auto; margin-right: auto;}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Tool Tips @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+.tooltip{
+  line-height: 15px;
+	position:absolute;
+	z-index: 6;
+	padding: 5px;
+	background: #A7A7A7;
+	border:2px solid #000;
+	margin: 0;
+	font-size: 10px;
+	display: block;
+
+	border-radius:0.5em;
+	-moz-border-radius:5px;
+	max-width: 450px;
+
+	opacity: 0.9;
+	-moz-opacity: 0.9;
+	filter:alpha(opacity=90);
+}
+
+
+
+#tooltip {
+	line-height: 15px;
+	position:absolute;
+	z-index: 6;
+	padding: 5px;
+	background: #A7A7A7;
+	border:2px solid #000;
+	margin: 0;
+	font-size: 10px;
+	display: block;
+
+	border-radius:0.5em;
+	-moz-border-radius:5px;
+	max-width: 400px;
+	opacity: 0.0;
+	-moz-opacity: 0.0;
+	filter:alpha(opacity=00);
+}
+.tooltip .apear { display: block; }
+.tooltip p{
+	margin-top: -10px;
+	font-size: 12px;
+	color: #000;
+
+}
+.tooltip span{
+	font-weight: bold;
+	color: #FFF333;
+}
+
+.tooltip h4{
+	font-weight: bold;
+	font-size: 20px;
+}
+.tooltip a{
+	font-weight: bold;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Infos Filmes @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#conteudo #infosFilmes {
+	background: #ccc;
+	border-radius: 1em;
+	padding:10px;
+	overflow:hidden;
+	min-height: 260px;
+	width: 95%;
+	margin-bottom: 40px;
+	text-align: center;
+}
+#infosFilmes h2 {
+	text-align: center;
+	color: #09c;
+	font-family: Georgia, Arial, San-Serif;
+}
+#infosFilmes p {
+	color: #333;
+}
+
+#conteudo #infosFilmes img{
+	float: left;
+	height:260px;
+	max-width: 200px;
+	border-radius: 1em;
+	margin-right: 20px;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Infos Series @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#conteudo #infosSeries {
+	background: #ccc;
+	border-radius: 1em;
+	padding:10px;
+	overflow:hidden;
+	min-height: 260px;
+	width: 95%;
+	margin-bottom: 40px;
+	text-align: justify;
+}
+#infosSeries h2 {
+	text-align: center;
+	color: #09c;
+	font-family: Georgia, Arial, San-Serif;
+}
+#infosSeries p {
+	color: #333;
+}
+#conteudo #infosSeries .img{
+	float:left;
+	height: 80%;
+}
+
+#conteudo #infosSeries .img img{
+	float: left;
+	height:260px;
+	max-width: 200px;
+	border-radius: 1em;
+	margin-right: 20px;
+}
+
+#conteudo #temporadas {
+	background: #ccc;
+	padding: 10px;
+	border-radius: 1em;
+	overflow:hidden;
+	min-height: 260px;
+	width: 95%;
+	margin-bottom: 40px;
+}
+#conteudo #temporadas h4{
+	text-align: center;
+	font: georgia ;
+	font-style: italic;
+}
+#conteudo #temporadas a{
+	display: block;
+line-height: 26px;
+padding: 0 10px;
+text-decoration: none;
+height: 26px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+#conteudo #temporadas li:hover{
+	background: #03c;
+	cursor: pointer;
+}
+#conteudo #temporadas li:hover a {
+	color: #fff;
+}
+
+#conteudo #temporadas .left{
+	float: left;
+width: 132px;
+text-align: left;
+
+}
+#conteudo #temporadas .left ul{
+	list-style: none;
+margin: 0;
+padding: 0;
+}
+#conteudo #temporada .left li{
+	display: list-item;
+text-align: -webkit-match-parent;
+}
+#conteudo #temporadas .right{
+	float: left;
+width: 779px;
+min-height: 200px;
+border-left: 1px solid #eee;
+border-color: rgba(0,0,0,0.15);
+}
+#conteudo #temporadas .right ul{
+	list-style: none;
+margin: 0;
+padding: 0;
+}
+#conteudo #temporadas .right li`{
+	display: list-item;
+text-align: -webkit-match-parent;
+}
+#conteudo #temporadas .right #temporada1{ display:block;}
+#conteudo #temporadas .right #temporada2{ display:none;}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Containers @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#ultimos-filmes #container2{
+	display:none;
+}
+#ultimos-filmes #container1{
+	display:block;
+}
+#ultimos-filmes #container-series2{
+	display:none;
+}
+#ultimos-filmes #container-series1{
+	display:block;
+}
+#filmes #topo #links a:hover{ cursor:pointer;}
